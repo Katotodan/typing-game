@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.success{
+    color: blue;
+}
+.fail {
+    color: red;
+    text-decoration: underline;
+}
+
+div{
+    margin-top: 7rem;
+    display: inline-block;
+}
+
+.car{
+    margin:0 2rem;
+    width: 75%;
+    border-bottom: 5px dashed blue;
+}
+i{
+    font-size: 3rem;
+    color: blue;
+    position: relative;
+    top: 0;
+    
+}
+.counter{
+    background-color: yellow;
+    width: 15%;
+    height: 3rem;
+    padding: 0.5rem;
+
+}
+
+p{
+    margin: 5rem 2rem 2rem 2rem;
+}
+textarea{
+    margin: 0rem 2rem 2rem 2rem;
+    width: 75%;
+    padding: 1rem;
+}
+textarea:focus{
+    outline: none;
+}
+em{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+button{
+    width: 10rem;
+    height: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: none;
+}
+h1{
+    text-align: center;
+    margin: 1rem 0rem;
+    height: 1rem;
+}
+.resolution{
+    display: none;
+}
+
+
+@media screen and (max-width: 916px) {
+    .car, textarea{
+        width: 65%;
+        margin-right: 1rem;
+    }
+    .counter{
+        width: 20%;
+    }
+    button{
+        width: 7rem;
+    }
+    
+}
+@media screen and (max-width: 533px) {
+    
+    button{
+        width: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .resolution{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-left: 0 auto;
+        background-color: #f0f0f0;
+        align-items: center;
+          
+    }
+    blockquote{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    main{
+        display: none;
+    }
+}
